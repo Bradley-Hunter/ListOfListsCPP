@@ -71,9 +71,18 @@ void getListFromFile(const string& filename) {
 }
 
 string getCurrentOption() {
+    bool done = false;
     string option;
-    cout << "\nWhat is your choice? " << endl;
-    getline(cin, option);
+    while (!done){
+        cout << "\nWhat is your choice?" << endl;
+        getline(cin, option);
+        if (option != ""){
+            done = true;
+        }
+        else{
+            cout << "Not a valid option";
+        }
+    }
     return option;
 }
 
