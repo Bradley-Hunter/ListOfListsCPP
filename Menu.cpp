@@ -4,11 +4,13 @@
 
 #include "Menu.h"
 
-Menu::Menu(vector<string> newMenu){
-    menu = newMenu;
+Menu::Menu(vector<string> newMenu)
+{
+   menu = newMenu;
 }
 
-void Menu::DisplayMenu(){
-    for (const auto& item : menu)
-        cout << item << endl;
+void Menu::DisplayMenu()
+{
+   for (const auto &item: menu)
+      cout << item << endl;
 }

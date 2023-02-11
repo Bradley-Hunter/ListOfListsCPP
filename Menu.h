@@ -3,18 +3,21 @@
 //
 #include <iostream>
 #include <vector>
+
 #ifndef LISTOFLISTSCPP_MENU_H
 #define LISTOFLISTSCPP_MENU_H
 
 using namespace std;
 
-class Menu {
+class Menu
+{
 protected:
-    vector<string> menu;
+   vector<string> menu;
 
 public:
-    Menu(vector<string>);
-    void DisplayMenu();
+   Menu(vector<string>);
+
+   void DisplayMenu();
 };
 
 
